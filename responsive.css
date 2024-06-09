@@ -1,0 +1,54 @@
+:root {
+    --primary: #007bff;
+    --lightprimary: #0056b3;
+    --white: #ffffff;
+    --silver: #bcbcbc9e;
+    --defaultLinkColor: #333;
+    --yellow : #FFD700;
+    --muted: #777777;
+    --whiteBG: #F8FAFC;
+}
+/* Styles responsives */
+/*Menu*/
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+/*Services shields*/
+@media (max-width: 768px) {
+    .container-services {
+        flex-direction: column;
+    }
+}
+/*Apropos*/
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .text-container, .image-container {
+        max-width: 100%;
+    }
+}
+/*Identification*/
+@media (max-width: 768px) {
+    .formulaire-container {
+        flex-direction: column;
+    }
+}
+/**/
