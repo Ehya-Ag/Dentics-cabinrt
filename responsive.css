@@ -42,7 +42,7 @@
       }
     
 }
-@media (max-width: 1525px) {
+/* @media (max-width: 1525px) {
     .liste-services {
         display: grid;
         gap: 4rem;
@@ -53,7 +53,7 @@
         right: 3rem;
         position: relative;
       }
-}
+} */
 @media (max-width: 923px) {
     .contenu-principal h1 {
         font-size: 1rem;
@@ -133,16 +133,17 @@
         display: none;
     }
     .bas {
-        display: flex;
-        flex-direction: column;
-        left: 375px;
-        width: 49%;
-        position: absolute;
-        margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    left: 1px;
+    width: 190%;
+    position: relative;
+    margin-top: 2rem;
       }
       .haut {
         display: flex;
         flex-direction: column;
+        width: 190%;
         top: 2rem;
         position: relative;
       }

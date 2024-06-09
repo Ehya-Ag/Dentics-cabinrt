@@ -267,10 +267,9 @@ nav {
     display: grid;
     gap: 4rem;
     justify-content: center;
-    grid-template-columns: repeat(3, 450px);
+    grid-template-columns: repeat(3, 350px);
     text-align: center;
     padding: 2rem;
-    right: 3rem;
     position: relative;
 }
 .services-container {
@@ -407,12 +406,11 @@ nav {
 
 .text-container {
     flex: 1;
-    max-width: 50rem;
+    max-width: 36rem;
     margin: 1rem;
-    padding: 6rem;
+    padding: 2rem;
     border-radius: 10px;
     background-color: var(--silver);
-    height: 60vh;
     text-align: left;
 }
 
@@ -429,7 +427,7 @@ nav {
 /*section docteurs*/
 
 .docteurs {
-    padding: 9.7rem;
+    padding: 4.7rem;
     text-align: center;
 }
 
@@ -598,7 +596,7 @@ p a:hover {
 }
 
 .image-container img {
-    max-width: 145%;
+    max-width: 100%;
     border-radius: 10px;
 }
 /*Appoinmant section*/
@@ -637,7 +635,7 @@ p a:hover {
     .bas{
         display: flex;
         flex-direction: column;
-        left: 1206px;
+        left: 923px;
         width: 49%;
         position: absolute;
         margin-top: 0;
@@ -727,7 +725,7 @@ p a:hover {
 .formulaire-newsletter input[type="text"]{
     background-color: #67a7eb;
     border: none;
-    color: var(--whiteBG);
+    color: var(--white);
     width:  15rem;
     height: 50px;
     margin: 1rem;
@@ -788,8 +786,7 @@ p a:hover {
     .partie1{
         border-right: 1px solid #f5F5F5;
         height: 200px;
-        margin-right: 90px;
-        padding: 30px;
+        margin-left: 45px;
     }
     .partie2{
         border-right: 1px solid #f5F5F5;
@@ -801,7 +798,7 @@ p a:hover {
         border-right: 1px solid #f5F5F5;
         height: 200px;
         margin-left: 0;
-        padding: 30px;
+        padding: 0;
     }
     .partie3 td{
         padding: 10px;
