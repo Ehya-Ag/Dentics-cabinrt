@@ -30,6 +30,84 @@
         display: block;
     }
 }
+/*Principale*/
+@media (max-width: 500px) {
+    .etapes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        flex-direction: column;
+        align-content: center;
+      }
+    
+}
+@media (max-width: 1525px) {
+    .liste-services {
+        display: grid;
+        gap: 4rem;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        text-align: center;
+        padding: 2rem;
+        right: 3rem;
+        position: relative;
+      }
+}
+@media (max-width: 923px) {
+    .contenu-principal h1 {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+      }
+      .contenu-principal p {
+        font-size: 0rem;
+        color: var(--muted);
+        margin-bottom: 0rem;
+      }
+      .nav-logo img {
+        max-width: 5rem;
+        font-weight: bold;
+        left: 5rem;
+        position: relative;
+      }
+    
+    .gauche3 {
+      display: none;
+    }
+    .droite3 {
+        display: flex;
+        margin-top: 5rem;
+        position: relative;
+        flex-direction: column;
+        justify-content: left;
+      }
+      .droite3 h3 {
+        display: flex;
+        position: relative;
+        left: 1px;
+        bottom: 0px;
+      }
+      .groupe_service {
+        position: relative;
+        left: -520px;
+      }
+      .liste-services {
+        display: grid;
+        gap: 4rem;
+        justify-content: center;
+        grid-template-columns: repeat(1, 250px);
+        text-align: center;
+        padding: 2rem;
+        right: 3rem;
+        position: relative;
+      }
+}
+/*service*/
+@media (max-width: 923px) {
+    .section-services{
+        flex-direction: column;
+    }
+}
 /*Services shields*/
 @media (max-width: 768px) {
     .container-services {
@@ -44,11 +122,77 @@
     .text-container, .image-container {
         max-width: 100%;
     }
+    
 }
 /*Identification*/
 @media (max-width: 768px) {
     .formulaire-container {
         flex-direction: column;
     }
+    .droite5{
+        display: none;
+    }
+    .bas {
+        display: flex;
+        flex-direction: column;
+        left: 375px;
+        width: 49%;
+        position: absolute;
+        margin-top: 2rem;
+      }
+      .haut {
+        display: flex;
+        flex-direction: column;
+        top: 2rem;
+        position: relative;
+      }
+      textarea {
+        border: 1px solid #f5F5F5;
+        width: 85%;
+        height: 100px;
+        border-radius: 10px 10px 10px 10px;
+        top: 2rem;
+        position: relative;
+      }
+      #sign {
+        background-color: #0056b3;
+        position: absolute;
+        margin-top: 350px;
+        width: 35%;
+        height: 30px;
+        border-radius: 10px 10px 10px 10px;
+        color: var(--white);
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .formulaire-newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      container-letter {
+        background: var(--lightprimary);
+        border-radius: 2rem;
+        color: var(--white);
+        padding: 2rem;
+        text-align: center;
+        height: 30rem;
+        justify-content: center;
+        display: grid;
+      }
+      .contenaire6 {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        background-color: rgba(81,110,255,255);
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        height: 400px;
+        color: #f5F5F5;
+        line-height: 30px;
+        padding: 20px;
+      }
 }
-/**/
+
+/*appoinment*/
