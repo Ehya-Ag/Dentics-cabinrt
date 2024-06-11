@@ -11,7 +11,7 @@
 <body>
     <div class="home"><a href="index.html">GO BACK</a></div>
     <div class="container-inscription">
-        <h1><span class="highlight">SIGN</span> UP</h1>
+        <h1><span class="couleur">SIGN</span> UP</h1>
         <div class="formulaire-container">
             <form class="formulaire-inscription" id="signupForm">
                 <label for="name">Name</label>
@@ -26,7 +26,7 @@
                 
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" placeholder="+01 (555) 000-0000">
-                <div id="phoneError" class="error-message"></div>
+                <div id="phoneError" class="error-message" required minlength="8" maxlength="11"></div>
                 
                 <label for="mail">Mail</label>
                 <input type="email" id="mail" placeholder="Your mail">
@@ -56,5 +56,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

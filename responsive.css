@@ -3,252 +3,258 @@
 /* Styles responsives */
 @media(max-width: 500px){
         
-        .formulaire-newsletter input[type="text"] {
-            background-color: var(--primary);
-            border: none;
-            color: var(--white);
-            width: 19rem;
-            height: 65px;
-            margin: 1rem;
-            border-radius: 10px 10px 10px 10px;
-          }
-          .formulaire-newsletter input[type="email"] {
-            background-color: var(--primary);
-            border: none;
-            color: var(--white);
-            width: 19rem;
-            height: 65px;
-            margin: 1rem;
-            border-radius: 10px 10px 10px 10px;
-          }
-          .formulaire-newsletter button{
-            width: 19rem;
-            height: 65px;
-            margin: 1rem;
-            border-radius: 10px 10px 10px 10px;
-          }
+    .formulaire-newsletter input[type="text"] {
+        border: none;
+        color: var(--white);
+        width: 19rem;
+        height: 52px;
+        margin: 1rem;
+        border-radius: 10px 10px 10px 10px;
+      }
+      .formulaire-newsletter input[type="email"] {
+        border: none;
+        color: var(--white);
+        width: 19rem;
+        height: 52px;
+        margin: 1rem;
+        border-radius: 10px 10px 10px 10px;
+      }
+      .formulaire-newsletter button{
+        width: 19rem;
+        height: 65px;
+        margin: 1rem;
+        border-radius: 10px 10px 10px 10px;
+      }
 }
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+.nav-container {
+    flex-direction: column;
+    align-items: flex-end;
+}
 
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: var(--white);
-    }
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--white);
+}
 
-    .nav-item {
-        padding: 0.5rem;
-        width: 100%;
-        text-align: left;
-    }
+.nav-item {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: left;
+}
 
-    .nav-link {
-        padding: 10px 20px;
-        width: 100%;
-    }
+.nav-link {
+    padding: 10px 20px;
+    width: 100%;
+}
 
-    .nav-toggle {
-        display: block;
-    }
+.nav-toggle {
+    display: block;
+}
 
-    .nav-container.active .nav-menu {
-        display: flex;
-    }
+.nav-container.active .nav-menu {
+    display: flex;
+}
 }
 /* */
 
 @media (max-width: 1000px) {
-    .contenu-principale {
-        display: flex;
-        flex-direction: column;
-    }
-    
+.contenu-principale {
+    display: flex;
+    flex-direction: column;
+}
+
 }
 @media (max-width: 800px) {
-    .contenu {
-        padding: 0;
-        text-align: center;
-      }
-    .contenu-principale {
-        display: flex;
-        gap: 2rem;
-        flex-direction: column;
-    }
-    .contenu-principale h1 {
-        font-size: 32px;
-        margin: 0;
-        text-align: center;
-    }
-    .contenu-principale p {
-        font-size: 17px;
-        color: var(--muted);
-        margin-bottom: 0rem;
-        text-align: center;
-    }
-    .contenu-principale button {
-        background: var(--primary);
-        color: var(--white);
-        padding: 0.5rem 1rem;
-        width: 200px;
-        height: 45px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .image-principale img {
-        width: 25.875rem;
-        height: 15rem;
-        border-radius: 10px;
-    }
-    /*Section*/
-    .section-services {
-        background: var(--primary);
-        padding: 4rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .etapes {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        gap: 1rem;
-    }
-    .service-etapes h2 {
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .service-etapes p {
-        font-size: 1.5em;
-    }
-    .etape {
-        width: 150px;
-        height: 90px;
-    }
-    /*Shield*/
-    .services-listS {
-        display: grid;
-        grid-template-columns: repeat(1, 400px);
-        list-style: none;
-        padding: 0;
-    }
-    .image-containerS  {
-        display: none;
+    .area {
+        top: 0px;
         position: relative;
-        padding: 0;
-        margin: 0;
       }
-      .services-containerS {
-        display: flex;
-        flex-direction: column;
-        left: 1px;
-        top: 1px;
-        padding: 1px;
-      }
-      .liste-services {
-        display: grid;
-        gap: 1rem;
-        justify-content: center;
-        grid-template-columns: repeat(1, 300px);
-        text-align: center;
-    }
-    .services-container {
-        display: flex;
-        padding: 2rem;
-    }
-    /*A bout*/
-    .content {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-      }
-      /*Appointment*/
-      .appointment {
-        padding: 43px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-      }
-      .appointment-image {
-        display: none;
-    }
-    .container-appointment{
-        display: flex;
-        flex-direction: column;
-    }
-    .appointment-form {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 0rem;
-        display: flex;
-        width: 353px;
+    .appointment-form button {
+        top: 0px;
 
       }
-    
-      .appointment-form button {
-        width: 330px;
-      }
-      .appointment textarea {
-                 display: flex;
-                justify-content: center;
-                width: 330px;
-                align-items: center;
-    }
-
-    .newsletter {
-  background-color: var(--silver);
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+.contenu {
+    padding: 0;
+    text-align: center;
+  }
+.contenu-principale {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 }
-            /*Newlestter*/
-            .newsletter form {
-                display: flex;
-                gap: 1rem;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-              }
-              .checkbox {
-                left: -19px;
-                position: relative;
-              }
-    /*Login*/
-    .image-container img{
-        display: none;
-    }
+.contenu-principale h1 {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+.contenu-principale p {
+    font-size: 17px;
+    color: var(--muted);
+    margin-bottom: 0rem;
+    text-align: center;
+}
+.contenu-principale button {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image-principale img {
+    width: 25.875rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+/*Section*/
+.section-services {
+    padding: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.etapes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+}
+.service-etapes h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.service-etapes p {
+    font-size: 1.5em;
+}
+.etape {
+    width: 150px;
+    height: 90px;
+}
+/*Shield*/
+.services-listS {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    list-style: none;
+    padding: 0;
+}
+.image-containerS  {
+    display: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .services-containerS {
+    display: flex;
+    flex-direction: column;
+    left: 1px;
+    top: 1px;
+    padding: 1px;
+  }
+  .liste-services {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(1, 300px);
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    padding: 2rem;
+}
+/*A bout*/
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Appointment*/
+  .appointment {
+    padding: 43px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .appointment-image {
+    display: none;
+}
+.container-appointment{
+    display: flex;
+    flex-direction: column;
+}
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0rem;
+    display: flex;
+    width: 353px;
+
+  }
+
+  .appointment-form button {
+    width: 330px;
+  }
+  .appointment textarea {
+             display: flex;
+            justify-content: center;
+            width: 330px;
+            align-items: center;
+}
+
+.newsletter {
+background-color: var(--silver);
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+        /*Newlestter*/
+        .newsletter form {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+          }
+          .checkbox {
+            left: 0;
+            position: relative;
+            top: 4px;
+          }
+/*Login*/
+.image-container img{
+    display: none;
+}
 
 .formulaire-inscription input, .formulaire-connexion input {
-    width: 100%;
-    height: 5vh;
+width: 100%;
+height: 5vh;
 }
 .formulaire-container {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    width: 175%;
-  }
-  .formulaire-connexion button {
-    padding: 0.75rem;
+display: flex;
+align-items: center;
+border-radius: 10px;
+width: 175%;
+}
+.formulaire-connexion button {
+padding: 0.75rem;
 
-    font-size: 1rem;
+font-size: 1rem;
 
-    width: 81%;
-    top: 78px;
-    position: relative;
-  }
-  .sexe-options input {
-    width: 25px;
-  }
+width: 81%;
+top: 78px;
+position: relative;
+}
+.sexe-options input {
+width: 25px;
+}
 } 

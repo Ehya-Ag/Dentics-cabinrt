@@ -117,7 +117,7 @@ nav {
     margin-bottom: 0rem;
 }
 .contenu-principale button {
-    background: var(--primary);
+    background: #516eff;
     color: var(--white);
     padding: 0.5rem 1rem;
     width: 290px;
@@ -136,7 +136,7 @@ nav {
 /*Section services*/
 /*Section services*/
 .section-services {
-    background: var(--primary);
+    background: #516eff;
     padding: 4rem;
     text-align: center;
     display: flex;
@@ -401,25 +401,36 @@ nav {
     top: 2rem;
     position: relative;
 }
-
+.area{
+    top: -50px;
+  position: relative;
+}
 .appointment-form label {
     position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
     display: flex;
     text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .appointment input{
-padding: 25px;
-border: 1px solid var(--whiteBG);
-border-radius: 4px;
-width: 298px;
+
+    font-size: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 339px;
+    height: 55px;
 }
 .appointment select{
-    padding: 25px;
-    border: 1px solid var(--whiteBG);
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid #ddd;
     border-radius: 4px;
-    width: 350px;
+    width: 354px;
     background-color: var(--white);
+    height: 61px;
     }
 
 .appointment textarea {
@@ -434,18 +445,19 @@ width: 298px;
     display: flex;
     padding: 10px;
     width: 726px;
-    left: -19px;
+    left: -12px;
     border-radius: 5px;
     position: relative;
+    top: -100px;
 }
 #box{
-  width: 40px;
-  padding: 0;
-  margin: 0;
+    width: 22px;
+    padding: 0;
+    margin: 0;
 }
 .appointment-form button {
     cursor: pointer;
-    background-color: var(--primary);
+    background-color: #0056b3;
     color: var(--white);
     border-radius: 5px;
     font-size: 16px;
@@ -454,6 +466,8 @@ width: 298px;
     justify-content: center;
     width: 45.375rem;
     height: 58px;
+    top: -146px;
+    position: relative;
     align-items: center;
 }
 /*section nelestter*/
@@ -468,14 +482,14 @@ width: 298px;
     color: var(--white);
 }
 .newsletter{
-    background-color: var(--silver);
+    background-color: #F8FAFC;
     padding-right: 150px;
     padding-left: 150px;
     padding-bottom: 50px;
     padding-top: 50px;
 }
 .fond-letter{
-    background-color: var(--lightprimary);
+    background-color: #216583;
     border-radius: 20px;
     padding: 50px;
     padding-bottom: 50px;
@@ -495,8 +509,10 @@ width: 298px;
 }
 
 .formulaire-newsletter input[type="text"]{
-    background-color: var(--primary);
+    background-color: #6f8f9c;
     border: none;
+    padding: 10px;
+    font-size: 20px;
     color: var(--white);
     width:  25rem;
     height: 65px;
@@ -504,8 +520,10 @@ width: 298px;
     border-radius: 10px 10px 10px 10px;
   }
   .formulaire-newsletter input[type="email"]{
-    background-color: var(--primary);
+    background-color: #6f8f9c;
     border: none;
+    padding: 10px;
+    font-size: 20px;
     color: var(--whiteBG);
     width: 25rem;
     height: 65px;
@@ -516,7 +534,8 @@ width: 298px;
     background-color: var(--white);
     color: var(--defaultLinkColor);
     width: 25rem;
-    height: 65px;
+    font-size: 20px;
+    height: 83px;
     margin: 1rem;
     border-radius: 10px 10px 10px 10px;
   }
@@ -535,7 +554,7 @@ width: 298px;
     line-height: 2rem;
 }
 .foot{
-    background-color: var(--primary);
+    background-color: #516eff;
     color: var(--white);
     position: relative;
     top: 50px;
@@ -564,7 +583,7 @@ width: 298px;
     filter: brightness(1500%)
 }
 .bas{
-    background-color: var(--lightprimary);
+    background-color: #216583;
     display: flex;
     position: relative;
     text-align: center;
