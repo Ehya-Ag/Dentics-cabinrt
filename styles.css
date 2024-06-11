@@ -12,7 +12,9 @@ body{
     margin: 0;
     padding: 0;
 }
-
+*{
+    max-width: 100%;
+}
 .entete {
     background-color: var(--white);
 }
@@ -631,7 +633,9 @@ width: 298px;
     width: 71%;
     height: 5vh;
 }
-
+.sexe-options input {
+    width: 20px;
+}
 .sexe-options {
     display: flex;
     gap: 1rem;

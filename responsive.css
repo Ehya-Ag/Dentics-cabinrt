@@ -248,4 +248,7 @@
     top: 78px;
     position: relative;
   }
+  .sexe-options input {
+    width: 25px;
+  }
 } 
