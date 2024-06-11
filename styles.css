@@ -640,7 +640,7 @@ width: 298px;
 .sexe-options label {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0rem;
 }
 .formulaire-inscription button{
     padding: 0.75rem;
