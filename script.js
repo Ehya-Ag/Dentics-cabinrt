@@ -1,17 +1,19 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
+    const navContainer = document.querySelector('.nav-container');
 
     navToggle.addEventListener('click', function() {
-        if (navMenu.style.display === 'flex') {
-            navMenu.style.display = 'none';
+        if (navContainer.classList.contains('active')) {
+            navContainer.classList.remove('active');
             navToggle.innerHTML = '&#9776;'; // Change back to menu icon
         } else {
-            navMenu.style.display = 'flex';
+            navContainer.classList.add('active');
             navToggle.innerHTML = '&#10006;'; // Change to X icon
         }
     });
 });
+
 /*Script pour login*/
 const forme = document.getElementById('loginForm');
 const emailInput = document.getElementById('email');

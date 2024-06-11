@@ -1,16 +1,12 @@
-:root {
-    --primary: #007bff;
-    --lightprimary: #0056b3;
-    --white: #ffffff;
-    --silver: #bcbcbc9e;
-    --defaultLinkColor: #333;
-    --yellow : #FFD700;
-    --muted: #777777;
-    --whiteBG: #F8FAFC;
-}
+/*Pour le menu*/
+
 /* Styles responsives */
-/*Menu*/
 @media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -19,181 +15,200 @@
     }
 
     .nav-item {
-        margin: 0;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: left;
     }
 
     .nav-link {
         padding: 10px 20px;
+        width: 100%;
     }
 
     .nav-toggle {
         display: block;
     }
-}
-/*Principale*/
-@media (max-width: 500px) {
-    .etapes {
+
+    .nav-container.active .nav-menu {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 4rem;
+    }
+}
+/* */
+
+@media (max-width: 1000px) {
+    .contenu-principale {
+        display: flex;
         flex-direction: column;
-        align-content: center;
-      }
+    }
     
 }
-/* @media (max-width: 1525px) {
-    .liste-services {
-        display: grid;
-        gap: 4rem;
-        justify-content: center;
-        grid-template-columns: repeat(2, 300px);
+@media (max-width: 800px) {
+    .contenu {
+        padding: 0;
         text-align: center;
-        padding: 2rem;
-        right: 3rem;
-        position: relative;
       }
-} */
-@media (max-width: 923px) {
-    .contenu-principal h1 {
-        font-size: 1rem;
-        margin-bottom: 0rem;
-      }
-      .contenu-principal p {
-        font-size: 0rem;
+    .contenu-principale {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .contenu-principale h1 {
+        font-size: 32px;
+        margin: 0;
+        text-align: center;
+    }
+    .contenu-principale p {
+        font-size: 17px;
         color: var(--muted);
         margin-bottom: 0rem;
-      }
-      .nav-logo img {
-        max-width: 5rem;
-        font-weight: bold;
-        left: 5rem;
-        position: relative;
-      }
-    
-    .gauche3 {
-      display: none;
+        text-align: center;
     }
-    .droite3 {
+    .contenu-principale button {
+        background: var(--primary);
+        color: var(--white);
+        padding: 0.5rem 1rem;
+        width: 200px;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .image-principale img {
+        width: 25.875rem;
+        height: 15rem;
+        border-radius: 10px;
+    }
+    /*Section*/
+    .section-services {
+        background: var(--primary);
+        padding: 4rem;
+        text-align: center;
         display: flex;
-        margin-top: 5rem;
-        position: relative;
         flex-direction: column;
-        justify-content: left;
-      }
-      .droite3 h3 {
+        justify-content: center;
+    }
+    .etapes {
         display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 1rem;
+    }
+    .service-etapes h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .service-etapes p {
+        font-size: 1.5em;
+    }
+    .etape {
+        width: 150px;
+        height: 90px;
+    }
+    /*Shield*/
+    .services-listS {
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        list-style: none;
+        padding: 0;
+    }
+    .image-containerS  {
+        display: none;
         position: relative;
-        left: 1px;
-        bottom: 0px;
+        padding: 0;
+        margin: 0;
       }
-      .groupe_service {
-        position: relative;
-        left: -520px;
+      .services-containerS {
+        display: flex;
+        flex-direction: column;
+        left: 1px;
+        top: 1px;
+        padding: 1px;
       }
       .liste-services {
         display: grid;
-        gap: 4rem;
+        gap: 1rem;
         justify-content: center;
-        grid-template-columns: repeat(1, 250px);
+        grid-template-columns: repeat(1, 300px);
         text-align: center;
+    }
+    .services-container {
+        display: flex;
         padding: 2rem;
-        right: 3rem;
-        position: relative;
-      }
-}
-/*service*/
-@media (max-width: 923px) {
-    .section-services{
-        flex-direction: column;
     }
-}
-/*Services shields*/
-@media (max-width: 768px) {
-    .container-services {
-        flex-direction: column;
-    }
-}
-/*Apropos*/
-@media (max-width: 768px) {
+    /*A bout*/
     .content {
+        display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
-    }
-    .text-container, .image-container {
-        max-width: 100%;
-    }
-    
-}
-/*Identification*/
-@media (max-width: 768px) {
-    .formulaire-container {
-        flex-direction: column;
-    }
-    .droite5{
+        align-items: center;
+      }
+      /*Appointment*/
+      .appointment-image {
         display: none;
     }
-    .bas {
-    display: flex;
-    flex-direction: column;
-    left: 1px;
-    width: 190%;
-    position: relative;
-    margin-top: 2rem;
-      }
-      .haut {
+    .container-appointment{
         display: flex;
         flex-direction: column;
-        width: 190%;
-        top: 2rem;
-        position: relative;
-      }
-      textarea {
-        border: 1px solid #f5F5F5;
-        width: 85%;
-        height: 100px;
-        border-radius: 10px 10px 10px 10px;
-        top: 2rem;
-        position: relative;
-      }
-      #sign {
-        background-color: #0056b3;
-        position: absolute;
-        margin-top: 350px;
-        width: 35%;
-        height: 30px;
-        border-radius: 10px 10px 10px 10px;
-        color: var(--white);
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-      }
-      .formulaire-newsletter {
+    }
+    .appointment-form {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: space-evenly;
+        gap: 0rem;
       }
-      container-letter {
-        background: var(--lightprimary);
-        border-radius: 2rem;
-        color: var(--white);
-        padding: 2rem;
-        text-align: center;
-        height: 30rem;
-        justify-content: center;
-        display: grid;
+      .appointment-form button {
+        width: 330px;
       }
-      .contenaire6 {
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
-        background-color: rgba(81,110,255,255);
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        height: 400px;
-        color: #f5F5F5;
-        line-height: 30px;
-        padding: 20px;
-      }
-}
+      .appointment textarea {
+                 display: flex;
+                justify-content: center;
+                width: 330px;
+                align-items: center;
+    }
 
-/*appoinment*/
+    .newsletter {
+  background-color: var(--silver);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+            /*Newlestter*/
+            .newsletter form {
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+              }
+              .checkbox {
+                left: -19px;
+                position: relative;
+              }
+    /*Login*/
+    .image-container img{
+        display: none;
+    }
+
+.formulaire-inscription input, .formulaire-connexion input {
+    width: 100%;
+    height: 5vh;
+}
+.formulaire-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 175%;
+  }
+  .formulaire-connexion button {
+    padding: 0.75rem;
+
+    font-size: 1rem;
+
+    width: 81%;
+    top: 78px;
+    position: relative;
+  }
+} 
