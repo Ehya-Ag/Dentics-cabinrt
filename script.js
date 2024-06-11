@@ -105,3 +105,23 @@ form.addEventListener('submit', function(event) {
         form.submit();
     }
 });
+/* Sroller*/
+// script.js
+
+// Lorsque l'utilisateur fait défiler vers le bas de 20px depuis le haut de la page, afficher le bouton
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+}
+
+// Lorsque l'utilisateur clique sur le bouton, remonter en haut de la page
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}

@@ -170,6 +170,12 @@
         align-items: center;
       }
       /*Appointment*/
+      .appointment {
+        padding: 43px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
       .appointment-image {
         display: none;
     }
@@ -182,7 +188,11 @@
         flex-wrap: wrap;
         flex-direction: column;
         gap: 0rem;
+        display: flex;
+        width: 353px;
+
       }
+    
       .appointment-form button {
         width: 330px;
       }
