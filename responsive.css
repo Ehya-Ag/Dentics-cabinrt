@@ -333,13 +333,7 @@ padding-top: 5px;
     min-width: 200px;
     border-bottom: 1px solid var(--white); 
 }
-/*#section2 {
-    /* flex: 1;
-    padding: 10px;
-    min-width: 200px;
-    border-bottom: 1px solid var(--white); 
-    border: none;
-}*/
+
 #section4 {
      /*flex: 1;
     padding: 10px;
@@ -347,13 +341,7 @@ padding-top: 5px;
     border-bottom: 1px solid var(--white); */
     border: none;
 }
-#section3 {
-    /* flex: 1;
-    padding: 10px;
-    min-width: 200px;
-    border-bottom: 1px solid var(--white); 
-    border: none;
-}
+
 /*Login*/
 .image-container img{
     display: none;
