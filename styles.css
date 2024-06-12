@@ -24,6 +24,11 @@ body{
     border: 5px solid var(--primary);
     background-color: #007bff;
     height: 5vh;
+    text-decoration: none;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    color: white;
     width: 6vw;
     padding: 0;
     text-align: center;
@@ -47,7 +52,6 @@ nav {
     display: flex;
     background-color: var(--white);
     justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
     width: 100%;
     max-width: 1710px;
@@ -643,22 +647,37 @@ nav {
 
 .formulaire-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
     max-width: 1200px;
-    width: 100%;
+    width: 100%; 
     margin:  auto;
-    padding: 2rem;
-    border-radius: 10px;
+    /* padding: 2rem; */
+    /* border-radius: 10px; */
 }
 
 .formulaire-inscription, .formulaire-connexion {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 1rem;
+    gap: 1rem; */
+    display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  width: 0;
+  /* justify-content: center;
+  align-content: center;
+  align-items: center; */
+  padding: 10px;
 }
-
+.formulaire{
+display: flex;
+  flex: 1;
+    justify-content: center;
+  align-content: center;
+  align-items: center; 
+}
 .formulaire-inscription label, .formulaire-connexion label {
     font-weight: bold;
 }
@@ -668,7 +687,7 @@ nav {
     display: flex;
     border: 1px solid var(--silver);
     border-radius: 5px;
-    width: 71%;
+    width: 100%;
     height: 5vh;
 }
 .sexe-options input {
@@ -685,14 +704,14 @@ nav {
     gap: 0rem;
 }
 .formulaire-inscription button{
-    padding: 0.75rem;
     border: none;
     border-radius: 5px;
     background-color: var(--primary);
     color: var(--white);
     font-size: 1rem;
     cursor: pointer;
-    width: 70%;
+    width: 50%;
+    height: 5vh;
     top: 50px;
     position: relative;
 }

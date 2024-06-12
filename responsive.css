@@ -4,7 +4,7 @@
 @media(max-width: 500px){   
           .social-icons {
             margin-top: 50px;
-            margin-right: 48px;
+            margin-right: 0;
           }
     .formulaire-newsletter input[type="text"] {
         border: none;
@@ -30,11 +30,21 @@
             border-radius: 10px 10px 10px 10px;
           
       }
+      .formulaire-container {
+        display: flex;
+        /* justify-content: space-between; 
+        align-items: center; 
+        max-width: 1200px;
+        width: 100%; */
+        margin:  auto;
+        /* padding: 2rem; */
+        /* border-radius: 10px; */
+    }
 }
 @media (max-width: 768px) {
-.nav-container {
+.nav-logo {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .nav-menu {
@@ -56,21 +66,34 @@
 }
 
 .nav-toggle {
-    display: block;
+    display: flex;
+    right: 20px;
+    position: absolute;
 }
 
 .nav-container.active .nav-menu {
     display: flex;
 }
 }
-
+.nav-container.active .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 /* */
 
 @media (max-width: 1050px) {
     /*Login*/
     #home {
-        height: 6;
+        height: 4vh;
         width: 24vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
       }
     /*Ours*/
     .image-container {
@@ -343,28 +366,30 @@ padding-top: 5px;
 }
 
 /*Login*/
-.image-container img{
+/* .image-container img{
     display: none;
-}
+} */
 
 .formulaire-inscription input, .formulaire-connexion input {
-width: 100%;
+width: 97%;
 height: 5vh;
 }
 .formulaire-container {
-display: flex;
+/* display: flex;
 align-items: center;
 border-radius: 10px;
-width: 175%;
+width: 175%; */
+display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid aliceblue;
+    box-shadow: 0 2px 2px 2px;
 }
 .formulaire-connexion button {
-padding: 0.75rem;
-
-font-size: 1rem;
-
-width: 81%;
-top: 78px;
-position: relative;
+    font-size: 1rem;
+    width: 50%;
+    top: 20px;
+    position: relative;
 }
 .sexe-options input {
 width: 25px;

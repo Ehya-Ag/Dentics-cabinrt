@@ -12,46 +12,50 @@
     <div class="container-inscription">
         <h1><span class="couleur">SIGN</span> UP</h1>
         <div class="formulaire-container">
-            <form class="formulaire-inscription" id="signupForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Full name">
-                <div id="nameError" class="error-message"></div>
-                
-                <label>Sexe</label>
-                <div class="sexe-options">
-                    <label><input type="radio" name="sexe" value="female"> Female</label>
-                    <label><input type="radio" name="sexe" value="male"> Male</label>
-                </div>
-                
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="+01 (555) 000-0000" required minlength="8" maxlength="11">
-                <div id="phoneError" class="error-message" ></div>
-                
-                <label for="mail">Mail</label>
-                <input type="email" id="mail" placeholder="Your mail">
-                <div id="mailError" class="error-message"></div>
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Your password">
-                <div id="passwordError" class="error-message"></div>
-                
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" placeholder="Confirm">
-                <div id="confirmPasswordError" class="error-message"></div>
-                
-                <button type="submit">Sign Up</button>
-                
-                <p>I have an account! <a href="login.html">Login</a></p>
-                <div id="home">
-                    <p id="log" class="sign"><a href="index.html">Go Home</a></p>
-                </div>
-                <div class="social-icons">
-                    <p>Connect with</p>
-                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><img src="images/twitter.png" alt="Twitter"></a>
-                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="images/instagrame.jpeg" alt="Instagram"></a>
-                </div>
-            </form>
+            <div class="formulaire">
+                <form class="formulaire-inscription" id="signupForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Full name">
+                    <div id="nameError" class="error-message"></div>
+                    
+                    <label>Sexe</label>
+                    <div class="sexe-options">
+                        <label><input type="radio" name="sexe" value="female"> Female</label>
+                        <label><input type="radio" name="sexe" value="male"> Male</label>
+                    </div>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="+01 (555) 000-0000" required minlength="8" maxlength="11">
+                    <div id="phoneError" class="error-message" ></div>
+                    
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail" placeholder="Your mail">
+                    <div id="mailError" class="error-message"></div>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Your password">
+                    <div id="passwordError" class="error-message"></div>
+                    
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm">
+                    <div id="confirmPasswordError" class="error-message"></div>
+                    
+                    <button type="submit">Sign Up</button>
+                    
+                    <p>I have an account! <a href="login.html">Login</a></p>
+                    <!-- <button id="home"> -->
+                        <!-- <p id="log" class="sign"></p> -->
+                        <a  id="home" href="index.html">Go Home</a>
+                    <!-- </button> -->
+                    <div class="social-icons">
+                        <p>Connect with</p>
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon"><img src="images/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="images/instagrame.jpeg" alt="Instagram"></a>
+                    </div>
+                </form>
+            </div>
+            
 
             <div class="image-container" id="imgs">
                 <img src="images/Illustrationss.png" alt="Sign Up">
