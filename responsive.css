@@ -1,8 +1,11 @@
 /*Pour le menu*/
 
 /* Styles responsives */
-@media(max-width: 500px){
-        
+@media(max-width: 500px){   
+          .social-icons {
+            margin-top: 50px;
+            margin-right: 48px;
+          }
     .formulaire-newsletter input[type="text"] {
         border: none;
         color: var(--white);
@@ -20,10 +23,12 @@
         border-radius: 10px 10px 10px 10px;
       }
       .formulaire-newsletter button{
-        width: 19rem;
-        height: 65px;
-        margin: 1rem;
-        border-radius: 10px 10px 10px 10px;
+        
+            width: 28rem;
+            height: 5vh;
+            margin: 1rem;
+            border-radius: 10px 10px 10px 10px;
+          
       }
 }
 @media (max-width: 768px) {
@@ -58,16 +63,76 @@
     display: flex;
 }
 }
+
 /* */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
+    /*Login*/
+    #home {
+        height: 6;
+        width: 24vw;
+      }
+    /*Ours*/
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0px;
+        position: relative;
+        top: 0px;
+      }
+    /*Newlestter*/
+.formulaire-newsletter input[type="text"] {
+    border: none;
+    color: var(--white);
+    width: 19rem;
+    height: 52px;
+    margin: 1rem;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .formulaire-newsletter input[type="email"] {
+    border: none;
+    color: var(--white);
+    width: 19rem;
+    height: 52px;
+    margin: 1rem;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .formulaire-newsletter button{
+    
+        width: 28rem;
+        height: 5vh;
+        margin: 1rem;
+        border-radius: 10px 10px 10px 10px;
+      
+  }
 .contenu-principale {
     display: flex;
     flex-direction: column;
 }
-
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px;
+    min-width: 200px;*/
+    border-bottom: 1px solid var(--white);
+    border-left: none;
 }
-@media (max-width: 800px) {
+
+#section1 {
+     flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid var(--white); 
+}
+/*Login*/
+#imgs, #imgl{
+    display: none;
+}
+}
+
+@media (max-width: 900px) {
     .area {
         top: 0px;
         position: relative;
@@ -230,6 +295,65 @@ padding-top: 5px;
             position: relative;
             top: 4px;
           }
+          .formulaire-newsletter input[type="email"]{
+            background-color: #6f8f9c;
+            border: none;
+            padding: 10px;
+            font-size: 15px;
+            color: var(--whiteBG);
+            width: 20rem;
+            height: 5vh;
+            margin: 1rem;
+            border-radius: 10px 10px 10px 10px;
+          }
+          .formulaire-newsletter input[type="text"]{
+            background-color: #6f8f9c;
+            border: none;
+            padding: 10px;
+            font-size: 15px;
+            color: var(--whiteBG);
+            width: 20rem;
+            height: 5vh;
+            margin: 1rem;
+            border-radius: 10px 10px 10px 10px;
+          }
+/*footer*/
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px;
+    min-width: 200px;*/
+    border-bottom: 1px solid var(--white);
+    border-left: none;
+}
+
+#section1 {
+     flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid var(--white); 
+}
+/*#section2 {
+    /* flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid var(--white); 
+    border: none;
+}*/
+#section4 {
+     /*flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid var(--white); */
+    border: none;
+}
+#section3 {
+    /* flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid var(--white); 
+    border: none;
+}
 /*Login*/
 .image-container img{
     display: none;
